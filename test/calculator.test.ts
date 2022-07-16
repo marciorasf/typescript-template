@@ -1,4 +1,4 @@
-import {division, sum} from '../src/calculator';
+import {division, sum} from 'calculator';
 
 describe('sum', () => {
   it('should sum integers', () => {

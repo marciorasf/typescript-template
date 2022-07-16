@@ -1,3 +1,3 @@
-import {sum} from './calculator';
+import {sum} from 'calculator';
 
 console.log(sum(1, 2));

@@ -7,11 +7,12 @@
   "license": "MIT",
   "private": false,
   "scripts": {
+    "start": "TS_NODE_BASEURL=./dist/src node -r tsconfig-paths/register dist/src/index.js",
     "dev": "nodemon",
     "test": "jest",
     "lint": "gts lint",
     "clean": "gts clean",
-    "compile": "tsc",
+    "compile": "tsc ",
     "fix": "gts fix",
     "posttest": "yarn run lint"
   },
@@ -29,7 +30,11 @@
       "global": {
         "lines": 90
       }
-    }
+    },
+    "moduleDirectories": [
+      "node_modules",
+      "src"
+    ]
   },
   "pre-commit": [
     "fix",
@@ -44,6 +49,7 @@
     "pre-commit": "^1.2.2",
     "ts-jest": "^28.0.6",
     "ts-node": "^10.9.1",
+    "tsconfig-paths": "^4.0.0",
     "typescript": "<4.5.0"
   }
 }

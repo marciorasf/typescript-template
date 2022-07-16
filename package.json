@@ -5,5 +5,8 @@
   "main": "index.js",
   "author": "marciorasf@gmail.com",
   "license": "MIT",
-  "private": false
+  "private": false,
+  "devDependencies": {
+    "typescript": "^4.7.4"
+  }
 }

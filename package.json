@@ -1,0 +1,9 @@
+{
+  "name": "typescript-template",
+  "version": "1.0.0",
+  "description": "Template for TypeScript projects.",
+  "main": "index.js",
+  "author": "marciorasf@gmail.com",
+  "license": "MIT",
+  "private": false
+}

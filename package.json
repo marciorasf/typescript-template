@@ -15,6 +15,22 @@
     "fix": "gts fix",
     "posttest": "yarn run lint"
   },
+  "jest": {
+    "preset": "ts-jest",
+    "testEnvironment": "node",
+    "collectCoverage": true,
+    "collectCoverageFrom": [
+      "./src/**"
+    ],
+    "coveragePathIgnorePatterns": [
+      "index.ts"
+    ],
+    "coverageThreshold": {
+      "global": {
+        "lines": 90
+      }
+    }
+  },
   "pre-commit": [
     "fix",
     "test"

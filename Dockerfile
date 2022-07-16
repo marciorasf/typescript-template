@@ -9,6 +9,6 @@ RUN yarn compile
 FROM node:16.16.0-alpine as runtime
 WORKDIR /app
 COPY package.json yarn.lock /app/
-COPY --from=build /app/build/ /app/build/
+COPY --from=build /app/dist/ /app/dist/
 RUN yarn --prod
-CMD ["node", "./dist/index.js"]
+CMD ["node", "./dist/src/index.js"]
